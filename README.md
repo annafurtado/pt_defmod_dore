@@ -3,7 +3,7 @@
 # Definition Modelling in Portuguese and English: a comparison between models and settings
 ### Scripts and resources used for DM
 
-This is the repository for the Definition Modelling in Portuguese and English: a comparison between models and settings carried out in the framework of the European Masters in Technology for Translation and Interpreting (EM-TTI).
+This is the repository for the master thesis Definition Modelling in Portuguese and English: a comparison between models and settings carried out in the framework of the European Masters in Technology for Translation and Interpreting (EM-TTI).
 
 ### Contents of this repository
 

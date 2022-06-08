@@ -1,7 +1,7 @@
 [<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 # Definition Modelling in Portuguese and English: a comparison between models and settings
-### All scripts and links used for the aforementioned thesis project
+### Scripts and resources used for DM
 
 This is the repository for the Definition Modelling in Portuguese and English: a comparison between models and settings carried out in the framework of the European Masters in Technology for Translation and Interpreting (EM-TTI).
 
@@ -15,5 +15,5 @@ This respository contains:
 
 #### Important Notes:
 
-1) Please, bear in mind that this repository should be only and solely for research and non-commercial purposes.
+1) Please, bear in mind that this repository should be only and solely used for research and non-commercial purposes.
 

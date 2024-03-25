@@ -1,19 +1,46 @@
 [<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-# Definition Modelling in Portuguese and English: a comparison between models and settings
-### Scripts and resources used for DM
+***<span style="font-size: 3em;">:warning:</span>You must agree to the [license](https://github.com/annafurtado/pt_defmod_dore/blob/main/LICENSE.txt) and terms of use before using the dataset in this repo.***
 
-This is the repository for the master thesis Definition Modelling in Portuguese and English: a comparison between models and settings carried out in the framework of the European Masters in Technology for Translation and Interpreting (EM-TTI).
+# DORE: Definition MOdelling in PoRtuguEse
+This repository introduces **DORE**, a comprehensive corpus of over 100,000 definitions from Portuguese dictionaries. Alongside **DORE**, we also introduce the models used to perform Portuguese DM. The release of **DORE** aims to fill in the gap of resources for Automatic Definition Generation, or Definition Modelling (DM), in Portuguese. **DORE** is the first dataset released for Portuguese DM.
 
-### Contents of this repository
+## Data Collection
 
-This respository contains:
-1) Scrapers - Two scripts used to scrape both Wikcionário and Dicio.
-2) Data - Links to the datasets used to train the models to perform definition modelling.
-3) Experiments - Links and scripts used to apply deep-learning to definition modelling.
+For **version 1.0**, we collected pairs of lemma, definition from two e-dictionaries in Portuguese. See the following table for more details. 
+
+|     Source        |  Amount  |
+|-------------------|----------|
+| Wiktionary  *( <https://pt.wiktionary.org/wiki/Wikcion%C3%A1rio:P%C3%A1gina_principal> )*       |  19,038   |
+| Dicio  *( <https://www.dicio.com.br/> )*       |  83,981   |
+| **Total**         | **103,019** |
+
+One of the .json files is shown below. 
+
+```json
+[{"id": "pt.024", "lemma": "trouxa", "gloss": "pessoa que se deixa enganar com facilidade; quem é facilmente enganado ou iludido: o trouxa ainda acredita em tudo que ele fala."},
+{"id": "pt.025", "lemma": "boxeador", "gloss": "pugilista; lutador de boxe; pessoa que, profissionalmente ou não, pratica boxe ou pugilismo."}]
+```
+
+## Data
+**DORE** is available in [HuggingFace](https://huggingface.co/datasets/multidefmod/dore) and can be downloaded using the following code. 
+
+```python
+from datasets import load_dataset
+
+dore = load_dataset('multidefmod/dore')
+```
 
 
-#### Important Notes:
+## Citation
+If you are using the dataset or the models, please cite the following paper.
 
-1) Please, bear in mind that this repository should be only and solely used for research and non-commercial purposes.
-
+~~~
+﻿@inproceedings{dore2024,
+author={Furtado, Anna B Dimas and Ranasinghe, Tharindu and Blain, Fréderic and Mitkov, Ruslan},
+title={{DORE: A Dataset For Portuguese Definition Generation}},
+booktitle={The 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)},
+year={2024},
+month={May},
+}
+~~~
